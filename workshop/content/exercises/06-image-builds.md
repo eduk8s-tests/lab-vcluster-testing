@@ -21,19 +21,19 @@ Tag the image with the details of the image registry for the workshop
 session:
 
 ```terminal:execute
-command: docker tag nginx-website {{REGISTRY_HOST}}/nginx-website:latest
+command: docker tag nginx-website {{registry_host}}/nginx-website:latest
 ```
 
 and push the image to the registry.
 
 ```terminal:execute
-command: docker push {{REGISTRY_HOST}}/nginx-website:latest
+command: docker push {{registry_host}}/nginx-website:latest
 ```
 
 Next create an image pull secret with the credentials for the image registry.
 
 ```terminal:execute
-command: kubectl create secret docker-registry session-registry --docker-server={{REGISTRY_HOST}} --docker-username={{REGISTRY_USERNAME}} --docker-password={{REGISTRY_PASSWORD}} -n website
+command: kubectl create secret docker-registry session-registry --docker-server={{registry_host}} --docker-username={{registry_username}} --docker-password={{registry_password}} -n website
 ```
 
 Patch the service account used for the deployment with the name of the image pull secret.
@@ -45,7 +45,7 @@ command: kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name":
 Set the image used by the deployment to use the image we just built.
 
 ```terminal:execute
-command: kubectl set image deployment/nginx nginx=image:{{REGISTRY_HOST}}/nginx-website:latest -n website
+command: kubectl set image deployment/nginx nginx=image:{{registry_host}}/nginx-website:latest -n website
 ```
 
 Wait for the redeployment to finish.
