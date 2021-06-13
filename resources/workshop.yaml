@@ -21,6 +21,10 @@ spec:
       console:
         enabled: true
         vendor: octant
+      docker:
+        enabled: true
+      registry:
+        enabled: true
     objects:
     - apiVersion: v1
       kind: ServiceAccount
