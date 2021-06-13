@@ -12,7 +12,7 @@ spec:
       budget: small
       secondary:
       - name: $(session_namespace)-vc
-        role: edit
+        role: view
         budget: large
     applications:
       terminal:
@@ -61,6 +61,29 @@ spec:
       subjects:
         - kind: ServiceAccount
           name: vcluster
+    - kind: Role
+      apiVersion: rbac.authorization.k8s.io/v1
+      metadata:
+        name: vcluster-connect
+        namespace: $(session_namespace)-vc
+      rules:
+        - apiGroups: [""]
+          resources: ["pods/exec"]
+          resourceNames: ["vcluster-0"]
+          verbs: ["*"]
+    - kind: RoleBinding
+      apiVersion: rbac.authorization.k8s.io/v1
+      metadata:
+        name: vcluster-connect
+        namespace: $(session_namespace)-vc
+      roleRef:
+        apiGroup: rbac.authorization.k8s.io
+        kind: Role
+        name: vcluster-connect
+      subjects:
+        - kind: ServiceAccount
+          namespace: $(workshop_namespace)
+          name: $(service_account)
     - kind: ClusterRoleBinding
       apiVersion: rbac.authorization.k8s.io/v1
       metadata:
@@ -71,8 +94,8 @@ spec:
         name: $(workshop_namespace)-anyuid
       subjects:
         - kind: ServiceAccount
-          name: vcluster
           namespace: $(session_namespace)-vc
+          name: vcluster
     - apiVersion: v1
       kind: Service
       metadata:
