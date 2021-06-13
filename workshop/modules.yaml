@@ -12,6 +12,8 @@ modules:
         name: Create Workload
     exercises/05-ingress-route:
         name: Ingress Route
+    exercises/06-image-builds:
+        name: Image Builds
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

@@ -8,4 +8,5 @@ modules:
     - exercises/03-cluster-context
     - exercises/04-create-workload
     - exercises/05-ingress-route
+    - exercises/06-image-builds
     - workshop-summary
