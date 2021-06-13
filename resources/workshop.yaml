@@ -6,7 +6,7 @@ spec:
   title: VCluster Testing
   description: Testing VCluster
   content:
-    files: github.com/eduk8s/lab-markdown-sample
+    files: github.com/eduk8s-tests/lab-vcluster-testing
   session:
     namespaces:
       budget: small

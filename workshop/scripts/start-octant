@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec /opt/kubernetes/bin/octant --disable-open-browser --listener-addr 127.0.0.1:10086 --accepted-hosts $SESSION_NAMESPACE-console.$INGRESS_DOMAIN
