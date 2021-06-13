@@ -11,7 +11,7 @@ command: kubectl get services -o name -n {{session_namespace}}-vc --context eduk
 To see what happens with an ingress, create an Ingress resource by executing:
 
 ```terminal:execute
-command: |
+command: |-
   cat >> nginx-sample/ingress.yaml << EOF
   apiVersion: networking.k8s.io/v1
   kind: Ingress
@@ -31,7 +31,8 @@ command: |
               name: nginx
               port:
                 number: 8080
-EOF
+  EOF
+```
 
 and reapply the resources for the deployment.
 
@@ -40,6 +41,15 @@ command: kubectl apply -f nginx-sample -n website
 ```
 
 Note that in this case we set the hostname for the ingress to be a name
-which we known will be mapped to the inbound ingress router of the underlying
-Kubernetes cluster.
+which we know will be mapped to the inbound ingress router of the underlying
+Kubernetes cluster. Even though the deployment and ingress were created via
+the virtual Kubernetes cluster, that the pod and ingress end up actually
+being created in the underlying Kubernetes cluster, it becomes available
+externally.
+
+To test access run:
+
+```terminal:execute
+command: curl {{session_namespace}}-nginx.{{ingress_domain}}
+```
 
