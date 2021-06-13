@@ -10,6 +10,10 @@ curl -L --silent --show-error --fail -o /opt/kubernetes/bin/vcluster https://git
 
 chmod +x /opt/kubernetes/bin/vcluster
 
+# Ensure using Educates cluster context.
+
+kubectl config use-context eduk8s
+
 # Connect to cluster, merging the kubeconfig with $HOME/.kube/config.
 
 vcluster connect vcluster -n $SESSION_NAMESPACE-vc --server https://vcluster.$SESSION_NAMESPACE-vc.svc.cluster.local --update-current
