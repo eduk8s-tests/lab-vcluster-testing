@@ -8,8 +8,8 @@ interact with the Educates environment.
 To illustrate this, lets make use of the Educates workshop feature to allow
 building of container images using ``docker`` and pushing them to an image
 registry associated with the workshop session. We will then update the
-deployment for out web site to use the image we just built and which was
-store in the image registry for the session.
+deployment for our web site to use the image we just built and which was
+stored in the image registry for the session.
 
 First we build the container image by running:
 

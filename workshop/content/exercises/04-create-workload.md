@@ -14,7 +14,7 @@ To monitor the deployment run:
 command: kubectl rollout status deployment/nginx -n website
 ```
 
-To list the pods created for the deplouyment run:
+To list the pods created for the deployment run:
 
 ```terminal:execute
 command: kubectl get pods -l app=nginx -n website
