@@ -26,9 +26,10 @@ kubectl config set-context vcluster_$SESSION_NAMESPACE-vc_vcluster --namespace d
 
 # Override start-octant script and remove option for setting it's default
 # namespace as having that means it ignores namespace set in context when
-# changing contexts. Also override the console URL the gateway uses when
-# first opening Octant. Both of these may actually no longer be required as
-# they were hacks to get around problems with early Octant versions.
+# changing contexts. Also override the console URL the gateway uses when first
+# opening Octant. Both of these may actually no longer be required as they
+# were hacks to get around problems with early Octant versions. Issue reported
+# to review/change this: https://github.com/eduk8s/pkgs-k8s-tools/issues/6
 
 cp /opt/workshop/scripts/start-octant /opt/eduk8s/sbin/start-octant
 
