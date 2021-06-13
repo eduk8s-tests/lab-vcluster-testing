@@ -1,27 +1,12 @@
-LAB - Markdown Sample
+LAB - Virtual Cluster
 =====================
 
-Sample workshop content using Markdown formatting for pages.
+This workshop demonstrates how to create a virtual Kubernetes cluster for
+each Educates workshop session created. When the workshop session is deleted,
+the virtual Kubernetes cluster will also be deleted.
 
-For more detailed information on how to create and deploy workshops, consult
-the documentation for Educates at:
-
-* https://docs.edukates.io
-
-If you already have the Educates operator installed and configured, to
-deploy and view this sample workshop, run:
-
-```
-kubectl apply -f https://raw.githubusercontent.com/eduk8s/lab-markdown-sample/master/resources/workshop.yaml
-kubectl apply -f https://raw.githubusercontent.com/eduk8s/lab-markdown-sample/master/resources/training-portal.yaml
-```
-
-This will deploy a training portal hosting just this workshop. To get the
-URL for accessing the training portal run:
-
-```
-kubectl get trainingportal/lab-markdown-sample
-```
-
-The training portal is configured to allow anonymous access. For your own
-workshop content you should consider removing anonymous access.
+A virtual Kubernetes cluster created using this workshop can be used in
+workshops where cluster admin access is required to a Kubernetes cluster.
+Instead of operating against the underlying Kubernetes cluster hosting
+Educates, everything will be against a virtual Kubernetes cluster contrained
+within the bounds of a namespace created for the workshop session.
