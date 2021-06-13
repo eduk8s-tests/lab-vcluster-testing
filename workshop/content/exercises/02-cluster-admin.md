@@ -1,6 +1,6 @@
 To demonstrate that the user of this workshop session does indeed have cluster
-admin access, lets start poking around with the virtual Kubernetes cluster and
-see what we can do.
+admin access, lets start poking around within the virtual Kubernetes cluster
+and see what we can do.
 
 First up, lets list all the namespaces in the cluster:
 

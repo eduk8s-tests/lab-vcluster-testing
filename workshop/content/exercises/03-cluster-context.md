@@ -59,3 +59,9 @@ statefulset.apps/vcluster   1/1     10m
 
 All that is currently running is the control plane for the virtual Kubernetes
 cluster.
+
+Do note though that RBAC has been setup to allow only view access to the
+workshop user for the namespace that the virtual Kubernetes cluster is running
+in. So you can view details of some resources, but not interact with any
+deployments directly within the namespace. Any interaction must be via the
+virtual Kubernetes cluster.
