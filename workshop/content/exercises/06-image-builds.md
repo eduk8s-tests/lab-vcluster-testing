@@ -46,7 +46,7 @@ command: |-
 Set the image used by the deployment to use the image we just built.
 
 ```terminal:execute
-command: kubectl set image deployment/nginx nginx=image:{{registry_host}}/nginx-website:latest -n website
+command: kubectl set image deployment/nginx nginx={{registry_host}}/nginx-website:latest -n website
 ```
 
 Wait for the redeployment to finish.
