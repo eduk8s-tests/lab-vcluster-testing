@@ -39,7 +39,8 @@ command: kubectl create secret docker-registry session-registry --docker-server=
 Patch the service account used for the deployment with the name of the image pull secret.
 
 ```terminal:execute
-command: kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "session-registry"}]}' -n website
+command: |-
+  kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "session-registry"}]}' -n website
 ```
 
 Set the image used by the deployment to use the image we just built.
