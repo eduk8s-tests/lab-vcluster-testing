@@ -15,3 +15,9 @@ kubectl config use-context vcluster_$SESSION_NAMESPACE-vc_vcluster
 kubectl config set-context vcluster_$SESSION_NAMESPACE-vc_vcluster --namespace default
 
 cp /opt/workshop/scripts/start-octant /opt/eduk8s/sbin/start-octant
+
+CONSOLE_URL="$INGRESS_PROTOCOL://$SESSION_NAMESPACE-console.$INGRESS_DOMAIN$INGRESS_PORT_SUFFIX/"
+
+cat >> /opt/eduk8s/etc/supervisor/gateway.conf << EOF
+environment=CONSOLE_URL=$CONSOLE_URL
+EOF
