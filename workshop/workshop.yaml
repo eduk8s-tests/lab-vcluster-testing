@@ -6,4 +6,6 @@ modules:
     - exercises/01-cluster-access
     - exercises/02-cluster-admin
     - exercises/03-cluster-context
+    - exercises/04-create-workload
+    - exercises/05-ingress-route
     - workshop-summary

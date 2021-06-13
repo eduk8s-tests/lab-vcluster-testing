@@ -5,5 +5,5 @@ virtual Kubernetes cluster will also be deleted.
 A virtual Kubernetes cluster created using this workshop can be used in
 workshops where cluster admin access is required to a Kubernetes cluster.
 Instead of operating against the underlying Kubernetes cluster hosting
-Educates, everything will be against a virtual Kubernetes cluster contrained
+Educates, everything will be against a virtual Kubernetes cluster constrained
 within the bounds of a namespace created for the workshop session.

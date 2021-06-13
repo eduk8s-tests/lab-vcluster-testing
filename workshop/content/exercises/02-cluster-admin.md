@@ -32,7 +32,7 @@ To show that it is possible to look in a namespace which would normally
 only be accessible to a cluster admin, run:
 
 ```terminal:execute
-command: get -n kube-system all -o name
+command: kubectl get -n kube-system all -o name
 ```
 
 The output should be similar to:

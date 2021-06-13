@@ -8,6 +8,10 @@ modules:
         name: Cluster Admin
     exercises/03-cluster-context:
         name: Cluster Context
+    exercises/04-create-workload:
+        name: Create Workload
+    exercises/05-ingress-route:
+        name: Ingress Route
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

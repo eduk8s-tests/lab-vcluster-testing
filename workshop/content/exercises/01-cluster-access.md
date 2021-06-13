@@ -14,5 +14,6 @@ workshops, but has until now not been useful in teaching workshops about
 cluster operations where cluster admin access was required.
 
 The virtual Kubernetes cluster created for each workshop session in this
-environment solves this problem as each user can be given what looks like a
-unique Kubernetes cluster, including cluster admin rights over that cluster.
+environment solves this problem, or at least for a wider subset of operations
+scenarios, as each user can be given what looks like a unique Kubernetes
+cluster, including cluster admin rights over that cluster.

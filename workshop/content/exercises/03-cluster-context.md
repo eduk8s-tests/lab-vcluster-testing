@@ -1,6 +1,6 @@
 Although what we see here is the virtual Kubernetes cluster for this specific
-workshop session, it is still possible to interact with the namespace that
-would usually be granted to the workshop session.
+workshop session, it is still possible to interact with the underlying
+Kubernetes cluster where Educates is running.
 
 To do this it is necessary to specify the context of the cluster you want
 to access.
@@ -19,8 +19,8 @@ CURRENT   NAME                                                 CLUSTER          
 *         vcluster_lab-{{session_namespace}}-vc_vcluster   vcluster_lab-{{session_namespace}}-vc_vcluster   vcluster_lab-{{session_namespace}}-vc_vcluster   default
 ```
 
-To see the list of namespaces for the Kubernetes cluster hosting Educates
-run:
+To see the list of namespaces for the Kubernetes cluster hosting Educates,
+rather than the virtual Kubernetes cluster, run:
 
 ```terminal:execute
 command: kubectl get ns --context eduk8s
