@@ -1,8 +1,9 @@
-name: Markdown Sample
+name: Virtual Cluster
 
 modules:
     activate:
     - workshop-overview
-    - setup-environment
-    - exercises/01-sample-content
+    - exercises/01-cluster-access
+    - exercises/02-cluster-admin
+    - exercises/03-cluster-context
     - workshop-summary
