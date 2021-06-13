@@ -3,7 +3,7 @@ kind: Workshop
 metadata:
   name: lab-vcluster-testing
 spec:
-  title: VCluster Testing
+  title: Virtual Cluster
   description: Test of running a virtual Kubernetes cluster.
   content:
     files: github.com/eduk8s-tests/lab-vcluster-testing
