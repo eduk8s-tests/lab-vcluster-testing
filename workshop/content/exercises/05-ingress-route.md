@@ -36,7 +36,7 @@ EOF
 and reapply the resources for the deployment.
 
 ```terminal:execute
-command: kubectl apply -f nginx-sample
+command: kubectl apply -f nginx-sample -n website
 ```
 
 Note that in this case we set the hostname for the ingress to be a name
