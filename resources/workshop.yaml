@@ -4,7 +4,7 @@ metadata:
   name: lab-vcluster-testing
 spec:
   title: Virtual Cluster
-  description: Test of running a virtual Kubernetes cluster.
+  description: Running a virtual Kubernetes cluster per session in Educates.
   content:
     files: github.com/failk8s/lab-vcluster-testing
   session:
