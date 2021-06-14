@@ -11,6 +11,7 @@ well as changes to the workshop base environment image.
 
 * https://github.com/eduk8s/pkgs-k8s-tools/issues/6
 * https://github.com/eduk8s/eduk8s-operator/issues/108
+* https://github.com/eduk8s/eduk8s-operator/issues/109
 
 So consider it a reflection of what could be possible in the future but don't
 try it yourself for now.
