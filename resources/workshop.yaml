@@ -6,7 +6,7 @@ spec:
   title: Virtual Cluster
   description: Test of running a virtual Kubernetes cluster.
   content:
-    files: github.com/eduk8s-tests/lab-vcluster-testing
+    files: github.com/failk8s/lab-vcluster-testing
   session:
     namespaces:
       budget: small
