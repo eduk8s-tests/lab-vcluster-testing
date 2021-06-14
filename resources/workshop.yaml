@@ -206,11 +206,11 @@ spec:
             - name: syncer
               image: "loftsh/virtual-cluster:0.0.27"
               args:
-                - --service-name=vcluster
-                - --suffix=vc
-                - --owning-statefulset=vcluster
-                - --out-kube-config-secret=vcluster
-                - --tls-san=vcluster.$(session_namespace)-vc.svc.cluster.local
+                - "--service-name=vcluster"
+                - "--suffix=vc"
+                - "--owning-statefulset=vcluster"
+                - "--out-kube-config-secret=vcluster"
+                - "--tls-san=vcluster.$(session_namespace)-vc.svc.cluster.local"
               volumeMounts:
                 - mountPath: /data
                   name: data
