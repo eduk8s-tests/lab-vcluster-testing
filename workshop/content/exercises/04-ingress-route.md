@@ -6,6 +6,7 @@ created in the underlying cluster.
 
 ```terminal:execute
 command: kubectl get services -o name -n {{session_namespace}}-vc --context eduk8s
+clear: true
 ```
 
 To see what happens with an ingress, create an Ingress resource by executing:

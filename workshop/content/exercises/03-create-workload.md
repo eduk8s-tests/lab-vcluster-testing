@@ -6,6 +6,7 @@ run:
 
 ```terminal:execute
 command: kubectl apply -f nginx-sample -n website
+clear: true
 ```
 
 To monitor the deployment run:

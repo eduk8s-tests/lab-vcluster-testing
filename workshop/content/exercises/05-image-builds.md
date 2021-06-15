@@ -15,6 +15,7 @@ First we build the container image by running:
 
 ```terminal:execute
 command: docker build -t nginx-website nginx-files
+clear: true
 ```
 
 Tag the image with the details of the image registry for the workshop

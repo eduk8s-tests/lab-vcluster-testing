@@ -9,6 +9,7 @@ To see what contexts exist, run:
 
 ```terminal:execute
 command: kubectl config get-contexts
+clear: true
 ```
 
 The output should be:
