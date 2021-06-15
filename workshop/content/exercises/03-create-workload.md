@@ -21,11 +21,10 @@ To list the pods created for the deployment run:
 command: kubectl get pods -l app=nginx -n website
 ```
 
-Now this is where things get rather interesting. That is that for any
-workloads that are created for the virtual Kubernetes cluster, although the
-control plane of the virtual Kubernetes manages them, they are created as pods
-within the namespace of the underlying Kubernetes cluster the control plane
-runs in.
+In the case of workloads created in the virtual Kubernetes cluster, although
+the control plane of the virtual Kubernetes manages them, they are created as
+pods within the namespace of the underlying Kubernetes cluster the control
+plane runs in.
 
 To see this, run:
 
