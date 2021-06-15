@@ -28,8 +28,9 @@ Although in a normal Educates workshop session you can list all namespaces
 in the Kubernetes cluster, it is not possible to see inside of namespaces
 you haven't been granted access to, nor can you create new namespaces.
 
-To show that it is possible to look in a namespace which would normally
-only be accessible to a cluster admin, run:
+To show that it is possible to look in a namespace which would normally only
+be accessible to a cluster admin, list the resources in the ``kube-system``
+namespace:
 
 ```terminal:execute
 command: kubectl get -n kube-system all -o name
