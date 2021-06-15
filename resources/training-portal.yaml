@@ -9,6 +9,6 @@ spec:
       type: anonymous
   workshops:
   - name: lab-vcluster-testing
-    capacity: 2
+    capacity: 1
     expires: 60m
     orphaned: 5m
