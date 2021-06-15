@@ -18,12 +18,6 @@ kube-public       Active   5m
 kube-node-lease   Active   5m
 ```
 
-Now create a new namespace:
-
-```terminal:execute
-command: kubectl create ns website
-```
-
 Although in a normal Educates workshop session you can list all namespaces
 in the Kubernetes cluster, it is not possible to see inside of namespaces
 you haven't been granted access to, nor can you create new namespaces.
@@ -43,4 +37,10 @@ pod/coredns-66c464876b-qbzzt
 service/kube-dns
 deployment.apps/coredns
 replicaset.apps/coredns-66c464876b
+```
+
+To show that it is possible to create a new namespace, run:
+
+```terminal:execute
+command: kubectl create ns website
 ```

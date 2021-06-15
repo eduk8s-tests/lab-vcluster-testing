@@ -41,6 +41,7 @@ To see what is currently running in that namespace run:
 
 ```terminal:execute
 command: kubectl get all -n {{session_namespace}}-vc --context eduk8s
+clear: true
 ```
 
 You should see output similar to:
