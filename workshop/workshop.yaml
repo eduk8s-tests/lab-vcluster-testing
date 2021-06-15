@@ -3,10 +3,9 @@ name: Virtual Cluster
 modules:
     activate:
     - workshop-overview
-    - exercises/01-cluster-access
-    - exercises/02-cluster-admin
-    - exercises/03-cluster-context
-    - exercises/04-create-workload
-    - exercises/05-ingress-route
-    - exercises/06-image-builds
+    - exercises/01-cluster-admin
+    - exercises/02-cluster-context
+    - exercises/03-create-workload
+    - exercises/04-ingress-route
+    - exercises/05-image-builds
     - workshop-summary

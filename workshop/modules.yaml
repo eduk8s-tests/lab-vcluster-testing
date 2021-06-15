@@ -2,17 +2,15 @@ modules:
     workshop-overview:
         name: Workshop Overview
         exit_sign: Setup Environment
-    exercises/01-cluster-access:
-        name: Cluster Access
-    exercises/02-cluster-admin:
+    exercises/01-cluster-admin:
         name: Cluster Admin
-    exercises/03-cluster-context:
+    exercises/02-cluster-context:
         name: Cluster Context
-    exercises/04-create-workload:
+    exercises/03-create-workload:
         name: Create Workload
-    exercises/05-ingress-route:
+    exercises/04-ingress-route:
         name: Ingress Route
-    exercises/06-image-builds:
+    exercises/05-image-builds:
         name: Image Builds
     workshop-summary:
         name: Workshop Summary
